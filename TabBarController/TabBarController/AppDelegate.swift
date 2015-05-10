@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftUI
+//  TabBarController
 //
 //  Created by pandazheng on 15/5/10.
 //  Copyright (c) 2015年 pandazheng. All rights reserved.
@@ -20,10 +20,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.backgroundColor = UIColor.whiteColor()
         
-        let rcv : ViewController = ViewController()
-        let nav = UINavigationController(rootViewController: rcv)
+        //创建三个界面
+        let vc1 : UIViewController = FirstViewController()
+        let nav1 = UINavigationController(rootViewController: vc1)
+        //TabBarItem
+        nav1.tabBarItem = UITabBarItem(title: "第一项", image: nil, selectedImage: nil)
+        //创建一个图片UIImage对象
+//        let image1 = UIImage(named: "test.jpg")
+//        nav1.tabBarItem = UITabBarItem(title: "第一项", image: image1, selectedImage: nil)
         
-        self.window?.rootViewController = nav;
+        let vc2 : UIViewController = SecondViewController()
+        let nav2 = UINavigationController(rootViewController: vc2)
+        //TabBarItem
+        nav2.tabBarItem = UITabBarItem(title: "第二项", image: nil, selectedImage: nil)
+        
+        let vc3 : UIViewController = ThreeViewController()
+        let nav3 = UINavigationController(rootViewController: vc3)
+        //TabBarItem
+        nav3.tabBarItem = UITabBarItem(title: "第三项", image: nil, selectedImage: nil)
+        
+        let arr = [nav1,nav2,nav3]
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = arr;
+        
+        self.window?.rootViewController = tabBarController
+        
         self.window?.makeKeyAndVisible()
         return true
     }

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SwiftUI
+//  TableViewDemo
 //
 //  Created by pandazheng on 15/5/10.
 //  Copyright (c) 2015年 pandazheng. All rights reserved.
@@ -16,14 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.backgroundColor = UIColor.whiteColor()
         
-        let rcv : ViewController = ViewController()
+        let rcv : UIViewController = RootViewController()
         let nav = UINavigationController(rootViewController: rcv)
+        self.window?.rootViewController = nav
         
-        self.window?.rootViewController = nav;
         self.window?.makeKeyAndVisible()
         return true
     }
