@@ -20,11 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor.redColor()
         self.window?.makeKeyAndVisible()
         
-        var rootView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        var rootView = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
         rootView.backgroundColor = UIColor.blueColor()
         self.window?.addSubview(rootView)
         
-        var label1 = UILabel(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        var label1 = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 100))
         label1.text = "panda"
         label1.textColor = UIColor.greenColor()
         label1.tag = 100
@@ -33,13 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var button1 = UIButton(frame: CGRect(x: 100, y: 200, width: 100, height: 50))
         button1.setTitle("ClickMe", forState: UIControlState.Normal)
         button1.backgroundColor = UIColor.blueColor()
-        button1.addTarget(self, action: "buttonClick:", forControlEvents: UIControlEvents.TouchUpInside)   //点击事件失效
+        button1.enabled = true
+        button1.addTarget(self, action: "buttonClick:", forControlEvents: UIControlEvents.TouchUpInside)   //点击事件失效,之前因为rootView太小了，呵呵，注意哦！
         rootView.addSubview(button1)
 
         return true
     }
     
-    @IBAction
     func buttonClick(sender: UIButton)
     {
         //println("ClickMe")
