@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,18 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-wU-FC4">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-wU-FC4">
                                 <rect key="frame" x="0.0" y="214" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="453280952.92216998">
                                     <!--2015-05-14 07:22:32 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="zh_CN"/>
+                                <connections>
+                                    <action selector="datePickerValueChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="3kI-jw-kFr"/>
+                                </connections>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7H-TL-6cm">
+                                <rect key="frame" x="252" y="448" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="inN-fT-DXf"/>
+                                </constraints>
+                                <state key="normal" title="CountDown">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="butttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYr-bz-eDB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A7H-TL-6cm" secondAttribute="trailing" constant="235" id="BFg-ja-WQk"/>
+                            <constraint firstAttribute="centerX" secondItem="fdG-wU-FC4" secondAttribute="centerX" id="DrW-x2-U5l"/>
+                            <constraint firstItem="fdG-wU-FC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="LWG-kw-pZw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fdG-wU-FC4" secondAttribute="trailing" constant="-16" id="Qef-BJ-bPT"/>
+                            <constraint firstAttribute="centerX" secondItem="A7H-TL-6cm" secondAttribute="centerX" id="WWo-aw-vnd"/>
+                            <constraint firstItem="fdG-wU-FC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="194" id="dcM-zF-wVu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="A7H-TL-6cm" secondAttribute="bottom" constant="122" id="e0E-Ma-BaE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="fdG-wU-FC4" id="tUo-C6-9l9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="517" y="271"/>
         </scene>
     </scenes>
 </document>
