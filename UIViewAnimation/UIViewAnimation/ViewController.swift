@@ -28,7 +28,8 @@ class ViewController: UIViewController {
     @IBAction func startAnimation(sender : AnyObject)
     {
         //self.baseAnimate()
-        self.opeationAnimate()
+        //self.opeationAnimate()
+        self.testLayerProperty()
     }
     
     @IBAction func fallbackAnimation(sender : AnyObject)
@@ -52,6 +53,21 @@ class ViewController: UIViewController {
         }) { (finish) -> Void in
             println("finish")
         }
+    }
+    
+    func testLayerProperty()
+    {
+        var myLayer = CALayer()
+        myLayer.backgroundColor = UIColor.magentaColor().CGColor
+        myLayer.borderColor = UIColor.orangeColor().CGColor
+        myLayer.borderWidth = CGFloat(5.0)
+        myLayer.cornerRadius = 10.0
+        myLayer.shadowColor = UIColor.greenColor().CGColor
+        myLayer.shadowOffset = CGSizeMake(25.0, 25.0)
+        myLayer.shadowOpacity = 0.5
+        myLayer.frame = CGRectMake(100, 100, 100, 100)
+        
+        self.view.layer.addSublayer(myLayer)
     }
 }
 

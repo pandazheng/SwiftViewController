@@ -34,12 +34,12 @@
                                     <action selector="fallbackAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evc-IP-uTh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0I3-hU-YY9">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0I3-hU-YY9">
                                 <rect key="frame" x="16" y="98" width="300" height="113"/>
                                 <color key="backgroundColor" red="0.093047765530000007" green="1" blue="0.11329252500000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.17536770489223785" green="0.97910846306971722" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="FirstView" destination="0I3-hU-YY9" id="jj3-qj-pYl"/>
