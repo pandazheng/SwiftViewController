@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TableViewDemo/TableViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TableView/TableView.xcodeproj">
    </FileRef>
    <FileRef
@@ -24,9 +27,6 @@
    </FileRef>
    <FileRef
       location = "group:MainWindow/MainWindow.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:TableViewDemo/TableViewDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TabBarController/TabBarController.xcodeproj">
