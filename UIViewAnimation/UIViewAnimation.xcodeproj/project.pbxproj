@@ -13,6 +13,7 @@
 		A45FB4071B05EAE100114556 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45FB4061B05EAE100114556 /* Images.xcassets */; };
 		A45FB40A1B05EAE100114556 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45FB4081B05EAE100114556 /* LaunchScreen.xib */; };
 		A45FB4161B05EAE100114556 /* UIViewAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45FB4151B05EAE100114556 /* UIViewAnimationTests.swift */; };
+		A45FB4201B073F3000114556 /* ym.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A45FB41F1B073F3000114556 /* ym.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A45FB40F1B05EAE100114556 /* UIViewAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45FB4141B05EAE100114556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45FB4151B05EAE100114556 /* UIViewAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimationTests.swift; sourceTree = "<group>"; };
+		A45FB41F1B073F3000114556 /* ym.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ym.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				A45FB4031B05EAE100114556 /* Main.storyboard */,
 				A45FB4061B05EAE100114556 /* Images.xcassets */,
 				A45FB4081B05EAE100114556 /* LaunchScreen.xib */,
+				A45FB41F1B073F3000114556 /* ym.jpg */,
 				A45FB3FD1B05EAE100114556 /* Supporting Files */,
 			);
 			path = UIViewAnimation;
@@ -195,6 +198,7 @@
 				A45FB4051B05EAE100114556 /* Main.storyboard in Resources */,
 				A45FB40A1B05EAE100114556 /* LaunchScreen.xib in Resources */,
 				A45FB4071B05EAE100114556 /* Images.xcassets in Resources */,
+				A45FB4201B073F3000114556 /* ym.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				A45FB41B1B05EAE100114556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A45FB41C1B05EAE100114556 /* Build configuration list for PBXNativeTarget "UIViewAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				A45FB41E1B05EAE100114556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
