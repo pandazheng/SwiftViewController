@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AlertDemo/AlertDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TapGesturesDemo/TapGesturesDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PanAndDragDemo/PanAndDragDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UIViewAnimation/UIViewAnimation.xcodeproj">
    </FileRef>
    <FileRef
